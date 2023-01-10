@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  user-select: none;
+  padding: 0.7em 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  box-shadow: 0 6px black, 0 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 3px rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: white;
+  background: black;
+}
+
+.btn:active {
+  background: black;
+  box-shadow: 0 2px black, 0 1px 6px rgba(0, 0, 0, 0.4),
+    inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 3px rgba(255, 255, 255, 0.5);
+  transform: translate(0, 4px);
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
